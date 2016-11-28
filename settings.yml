@@ -1,0 +1,28 @@
+## Donation tracker settings
+
+## Ranks must be written in DESCENDING order
+## From most expensive to least!
+## Writing ranks in a different order will fuck up program functionality
+ranks: 
+  '$$$':
+    ## Cost of this rank
+    cost: 50
+    ## How to display this rank in chat messages
+    format: "&2$$$"
+  '$$':
+    cost: 20
+    format: "&2$$&a$"
+  '$':
+    cost: 10
+    format: "&2$&a$$"
+messages:
+  # just {format} variable; no others right now
+  rankup-reached: "&aThank you for your generous donation, you have now reached {format}!"
+  
+  #false for off
+  #has no variables right now
+  non-rankup: "false"
+  
+  #false for off
+  # can use {username}, {amount} and {total}
+  donation-broadcast: "&aThank you to &2{username}&a for their generous donation of &2{amount}&a! Grand Total: &2{total}"
