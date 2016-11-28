@@ -19,7 +19,7 @@ public class DonationTracker extends JavaPlugin implements Listener {
 		plugin = null;
 	}
 	
-	public static Plugin getPluhgin() {
+	public static Plugin getPlugin() {
 		return plugin;
 	}
 	
