@@ -7,9 +7,8 @@ import org.bukkit.plugin.Plugin;
 import uk.co.ycleptjohn.donationtracker.DonationTracker;
 
 public enum Config {
-	GENERAL("general", "general.yml"),
-	PERKS("perks", "perks.yml"),
-	MESSAGES("messages", "messages.yml");
+	SETTINGS("settings", "settings.yml"),
+	DATA("data", "data.yml");
 	
 	private Plugin plugin = DonationTracker.getPlugin();
 	private String name;
