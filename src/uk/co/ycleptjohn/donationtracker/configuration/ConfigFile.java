@@ -33,11 +33,21 @@ public class ConfigFile extends YamlConfiguration {
 		return file;
 	}
 	
-	
 	public void reset() {
 		generateDefault();
 	}
 	
+	public void reload() {
+		try {
+			this.load(getFile());
+		} catch (FileNotFoundException e) {
+			generateDefault();
+		}
+		catch (IOException | InvalidConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	
 	public void generateDefaultIfMissing() {
 		boolean missing = true;
