@@ -31,7 +31,7 @@ public class ConfigHandler {
 		}
 	}
 	
-	public void regenerateAllConfigsIfMissing() {
+	public void regenerateAllMissingConfigs() {
 		for(Config c : Config.values()) {
 			ConfigFile cf = c.getConfigFile();
 			try {
