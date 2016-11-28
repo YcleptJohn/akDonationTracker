@@ -1,0 +1,9 @@
+name: DonationTracker
+main: uk.co.ycleptjohn.donationtracker.DonationTracker
+version: 1
+author: JohnJT
+description: Donation Tracking
+commands:
+  adddonation:
+    description: Add a donation a user '/add {uuid} {amount}'
+    usage: /adddonation
